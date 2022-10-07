@@ -12,6 +12,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@hsorby/vue3-katex": "^0.6.0-rc.3",
+    "katex": "^0.15.6",
+    "mathjs": "^11.2.1",
     "vue": "^3.2.38"
   },
   "devDependencies": {

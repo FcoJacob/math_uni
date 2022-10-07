@@ -6,12 +6,12 @@ import ComponentNav from "../components/ComponentNav/ComponentNav.vue";
 
 describe('ComponentNav', () => {
   test("renders properly", () => {
-    render(ComponentNav, { props: { msg: 'Navigation' }});
-    expect(screen.getByText('Navigation')).toBeInTheDocument();
+    render(ComponentNav, { props: { extendNav: false }});
+    expect(screen.getByRole('navigation')).toHaveClass('w-16');
   });
 
   test("should extend navigation", async () => {
-    render(ComponentNav, { props: { msg: 'Navigation' }});
+    render(ComponentNav, { props: { extendNav: false }});
     
     const button = screen.getByRole('button', {name: 'x'})
     await fireEvent.click(button);
