@@ -1,12 +1,18 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "vitest.config.js"],
-  "exclude": ["src/__tests__/*", "node_modules"],
-  "compilerOptions": {
-    "composite": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "include": [
+        "env.d.ts",
+        "types.d.ts",
+        "src/**/*",
+        "src/**/*.vue",
+        "vitest.config.js"
+    ],
+    "exclude": ["src/__tests__/*", "node_modules"],
+    "compilerOptions": {
+        "composite": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
     }
-  }
 }
